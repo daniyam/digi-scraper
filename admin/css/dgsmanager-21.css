@@ -1,0 +1,290 @@
+#wpbody-content
+{
+    min-height: 100vh;
+}
+/*start style for scraps managment page*/
+
+@media (min-width: 992px) {
+    #wpwrap #wpcontent:before
+    {
+        display: block;
+        content: "";
+        height: 200px;
+        position: absolute;
+        width: calc(100% - 160px);
+        top: 0px;
+        z-index: 0;
+        background: rgb(238,9,121);
+        background: linear-gradient(270deg, rgba(238,9,121,1) 0%, rgba(255,106,0,1) 100%);
+    }
+}
+
+.scraps-managment-container
+{
+
+}
+.scraps-managment-container .scrap-managment-list
+{
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    margin: 38px 50px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,.11);
+    min-height: 600px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 22px 30px;
+    box-sizing: border-box;
+}
+.scrap-managment-list
+{
+    color: #808d9b;
+    background: #eef2f5;
+    margin: 0 -20px -65px 0;
+    min-width: 768px;
+    min-height: 100vh;
+    padding-bottom: 72px;
+}
+.scraps-managment-container .scrap-managment-list .scrap-managment-page-heading {
+    position: relative;
+    margin-bottom: 36px;
+}
+.scraps-managment-container .scrap-managment-list .scrap-managment-page-heading h2:first-child
+{
+    display: inline-block;
+    vertical-align: middle;
+    color: #444f5b;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    /*margin: 40px 0 20px;*/
+    padding: 0;
+}
+a.create-new-scrap-button {
+    background: #4ad504;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 0 24px;
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s ease;
+    margin-right: 28px;
+}
+.create-new-scrap-button:hover
+{
+    color: #f7f7f7;
+}
+.scrap-managment-page-heading-subheading {
+    max-width: 500px;
+    margin: 20px 0;
+}
+@media screen and (min-width:992px) {
+    .current-system-status
+    {
+        max-width: 512px;
+        position: absolute;
+        top: -22px;
+        left: -36px;
+    }
+}
+table {
+    width:98%;
+    margin:0 auto;
+    border-bottom:3px #eee solid;
+    border-collapse:collapse;
+    font-size:12px
+}
+th, td {
+    padding:5px 10px
+}
+caption {
+    font-weight:bold;
+    font-size:24px;
+    padding:5px;
+    color:#1BA6B2;
+    text-align:right;
+    margin-bottom:5px
+}
+thead th {
+    background:#ABC668;
+    color:#fff;
+    border-right:1px solid #fff
+}
+thead th:last-child {
+    /*border-right:none;*/
+}
+tbody th {
+    width:35%
+}
+tbody td {
+    text-align: center;
+}
+tbody td .state-parameter
+{
+    margin-right: 10px;
+    font-size: 16px;
+}
+tbody td .fa-times
+{
+    color: red;
+}
+tbody td .fa-check
+{
+    color: green;
+}
+tbody tr:nth-child(even) {
+    background:#eee
+}
+tbody tr:nth-child(even) th {
+    background:#ddd
+}
+tbody tr:hover {
+    background:#F3F5BB
+}
+tbody tr:hover th {
+    background:#F2F684;
+    color:#1BA6B2
+}
+tfoot tr {
+    border-top:6px solid #E9F7F6;
+    color:#1BA6B2
+}
+.scraps-list {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 40px;
+}
+.scraps-list thead th:first-child {
+    border-radius: 3px 0 0 3px;
+}
+.scraps-list thead th {
+    color: #9eafc4;
+    background: #f1f4f7;
+    padding: 15px 22px 14px;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.538;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.scraps-list thead th span {
+    display: inline-block;
+    position: relative;
+}
+.scraps-list thead  thead th:last-child {
+    border-radius: 0 3px 3px 0;
+    cursor: none;
+}
+.scraps-list tbody tr td {
+    padding: 20px 22px 19px;
+}
+.scraps-list-item td {
+    border-bottom: 1px solid #edf1f4;
+}
+.scraps-list-item-name {
+    font-weight: 500;
+    max-width: 170px;
+}
+.scraps-list-item-actions-restore, .scraps-list-item-actions a, .scraps-list-item-date, .scraps-list-item-name {
+    color: #808d9b;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.84615385;
+}
+.scraps-list-item-name a {
+    display: block;
+    color: #2092f2;
+    transition: all .2s ease;
+    text-decoration: none;
+}
+.scraps-list-item-date {
+    color: #808d9b;
+}
+.scraps-list-item-actions a {
+    display: inline-block;
+    position: relative;
+    color: #80a5bb;
+    margin-left: 40px;
+    padding-left: 22px;
+    text-decoration: none;
+}
+.scraps-list-item-actions a:focus, .scraps-list-item-actions a:hover {
+    color: #444;
+}
+.scraps-list-item-actions .fa-edit:before, .scraps-list-item-actions .fa-remove:before, .scraps-list-item-actions .fa-repeat:before{
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    transition: all .2s ease;
+}
+.scraps-list-item-date .date-time span:first-child
+{
+    display: inline-block;
+    margin-left: 7px;
+}
+.scraps-list-item-date .number-of-imported span:first-child
+{
+    display: inline-block;
+    margin-left: 2px;
+}
+.scraps-list-item td .badg
+{
+    display: inline-block;
+    padding: 4px 5px 4px 5px;
+    border: solid 1px lightgoldenrodyellow;
+}
+.scraps-list-item td .scrap-running
+{
+    background: lightcoral;
+}
+.scraps-list-item td .scrap-stop
+{
+    background: lavender;
+}
+.scraps-list-item td .scrap-completed
+{
+    background: #4ad504;
+}
+.scraps-list-item td .scrap-running,.scraps-list-item td .scrap-completed
+{
+    color: white;
+}
+.ajax-load
+{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height:100%;
+    display: none;
+    background: rgba(0,0,0,0.1);
+    left: 0px;
+}
+.ajax-load .spinner_dgs {
+    margin: 100px auto;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top:18%;
+}
+.ajax-load .spinner_dgs .spinner-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.notice, div.error, div.updated,.fs-notice .fs-notice-body,#update-nag, .update-nag
+{
+    display:none !important;
+}
+
